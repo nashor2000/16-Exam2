@@ -13,7 +13,7 @@ def main():
     """ Calls the   TEST   functions in this module. """
     # -------------------------------------------------------------------------
     # Uncomment the following calls to the testing functions one at a time
-    # as you work the problems..
+    # as you work the problems.
     # -------------------------------------------------------------------------
     print('Un-comment the calls in MAIN one by one')
     print(' to run the testing code as you complete the TODOs.')
