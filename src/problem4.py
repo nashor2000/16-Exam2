@@ -2,7 +2,7 @@
 Exam 2, problem 4.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  April 2018.
+         their colleagues and Xuechen Bai.  April 2018.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import time
@@ -18,8 +18,8 @@ def main():
     print('Un-comment the calls in MAIN one by one')
     print(' to run the testing code as you complete the TODOs.')
 
-    # run_test_problem4a()
-    # run_test_problem4b()
+    run_test_problem4a()
+    run_test_problem4b()
 
 
 ###############################################################################
@@ -156,7 +156,11 @@ def problem4a(strings):
     # TODO: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
-
+    for k in range(len(strings)):
+        a = len(strings[k])
+        if is_prime(a) is True:
+            return strings[k]
+    return int(-1)
 
 def run_test_problem4b():
     """ Tests the   problem4b   function. """
@@ -216,11 +220,12 @@ def run_test_problem4b():
                                      color='red')
 
 
+
 # -----------------------------------------------------------------------------
 #    *** IMPORTANT:  THIS PROBLEM COUNTS ONLY 2 POINTS
 #                    AND HAS AN ELEGANT SOLUTION.  DO NOT GET STUCK ON IT!
 # -----------------------------------------------------------------------------
-def problem4b(list_of_tuples_of_strings):
+def problem4b(a):
     """
     What comes in:  A list of tuples of strings.
     What goes out:
@@ -254,6 +259,15 @@ def problem4b(list_of_tuples_of_strings):
     #    *** IMPORTANT:  THIS PROBLEM COUNTS ONLY 2 POINTS
     #                    AND HAS AN ELEGANT SOLUTION.  DO NOT GET STUCK ON IT!
     # -------------------------------------------------------------------------
+
+
+    for k in range(len(a)):
+        if problem4a(a[k]) != -1:
+            return True
+    return False
+
+
+
 
 
 ###############################################################################
